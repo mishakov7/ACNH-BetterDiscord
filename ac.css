@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+:root {
+  --font-primary: "Istok Web", sans-serif;
+  --font-display: "Istok Web", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-headline: "fot-seurat-pron", sans-serif;
+  /* base colors */
+  --drk-brown: #716550;
+  --brown: #968059;
+  --md-brown: #DACBAD;
+  --lt-brown: #EDE1CB;
+  --cream: #F5F3E5;
+  --gray: #CFCEC2;
+  --yellow: #FFEB4C;
+  --white: #FFF;
+  /* background choices */
+  --bg-teal: #81D4BA;
+  --bg-blue: #8A9AEF;
+  --bg-pink: #F3A8B2;
+  --bg-lime: #CFDA4F;
+  --bg-maple: #E49366;
+}
+
+[class*=theme-dark], [class*=theme-light] {
+  --header-primary: var(--drkbrown);
+  --header-secondary: var(--drkbrown);
+  --text-normal: var(--drk-brown);
+  --text-muted: var(--md-brown);
+  --text-link: #146aa7;
+  --text-link-low-saturation: #5b98c4;
+  --text-positive: hsl(240, 9%, 89%);
+  --text-warning: hsla(350, 75%, 65%, 0.8);
+  --text-danger: hsl(350, 75%, 65%);
+  --text-brand: var(--pink);
+  --interactive-normal: var(--brown);
+  --interactive-hover: var(--drk-brown);
+  --interactive-active: var(--drk-brown);
+  --interactive-muted: var(--lt-brown);
+  --background-primary: none;
+  --background-secondary: var(--cream);
+  --background-secondary-alt: var(--cream);
+  --background-tertiary: var(--bg-teal);
+  --background-accent: none;
+  --background-floating: var(--drk-brown);
+  --background-mobile-primary: var(--bg);
+  --background-mobile-secondary: var(--bg-lighter);
+  --background-modifier-hover: var(--lt-brown);
+  --background-modifier-active: var(--yellow);
+  --background-modifier-selected: var(--yellow);
+  --background-modifier-accent: #FFF;
+  --info-positive-text: var(--white);
+  --info-warning-text: var(--white);
+  --info-danger-text: var(--white);
+  --info-help-background: hsla(257, 25%, 14%,0.1);
+  --info-help-foreground: hsl(240, 9%, 89%);
+  --info-help-text: var(--white);
+  --status-warning-text: var(--temp-quotes);
+  --scrollbar-thin-thumb: rgba(152,139,199,0.3);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: rgba(152,139,199,0.5);
+  --scrollbar-auto-track: rgba(37,33,49,0.5);
+  --scrollbar-auto-scrollbar-color-thumb: rgba(152,139,199,0.5);
+  --scrollbar-auto-scrollbar-color-track: rgba(37,33,49,0.5);
+  --elevation-stroke: 0 0 0 1px var(--tab-drop-bg);
+  --elevation-low: rgba(37, 33, 49,0.15);
+  --elevation-medium: 0 4px 4px rgba(37, 33, 49,0.20);
+  --elevation-high: 0 8px 16px rgba(37, 33, 49,0.25);
+  --logo-primary: hsl(55, 70%, 69%);
+  --control-brand-foreground: hsl(55, 70%, 69%);
+  --control-brand-foreground-new: hsl(55, 70%, 69%);
+  --background-mentioned: hsla(253, 35%, 66%,0.1);
+  --background-mentioned-hover: hsla(253, 35%, 66%,0.2);
+  --background-message-hover: rgba(65,65,77,0.1);
+  --channels-default: hsla(240, 9%, 89%, 0.5);
+  --guild-header-text-shadow: 0 1px 1px hsla(252, 23%, 9%, 0.4);
+  --channeltextarea-background: var(--bg-darker);
+  --activity-card-background: var(--bg-darker);
+  --textbox-markdown-syntax: var(--color8);
+  --deprecated-card-bg: var(--bg-darker);
+  --deprecated-card-editable-bg: var(--bg-dark);
+  --deprecated-store-bg: var(--bg-darker);
+  --deprecated-quickswitcher-input-background: var(--bg-light);
+  --background-spacing: var(--bg-lighter);
+  --deprecated-quickswitcher-input-placeholder: rgba(225, 225, 230,0.3);
+  --deprecated-text-input-bg: rgba(32, 27, 45,0.02);
+  --deprecated-text-input-border: rgba(37, 33, 49,0.3);
+  --deprecated-text-input-border-hover: #252131;
+  --deprecated-text-input-border-disabled: #15121E;
+  --deprecated-text-input-prefix: #13111B;
+  --message-text-color: #ced4da;
+  --info-positive-background: hsla(257, 25%, 14%,0.1);
+  --info-positive-foreground: hsl(240, 9%, 89%);
+  --info-warning-background: hsla(257, 25%, 14%,0.1);
+  --info-warning-foreground: hsl(240, 9%, 89%);
+  --info-danger-background: hsla(257, 25%, 14%,0.1);
+  --info-danger-foreground: hsl(240, 9%, 89%);
+  --status-positive-background: hsl(257, 25%, 14%);
+  --status-positive-text: hsl(240, 33%, 98%);
+  --status-warning-background: var(--color0);
+  --status-danger-background: var(--bg-lighter);
+  --status-danger-text: hsl(240, 33%, 98%);
+  --focus-primary: var(--line-highlight);
+}
+
+[data-popout-root], html {
+  --brand-experiment: hsla(326, 100%, 74%, 0.9);
+  --brand-experiment-200: var(--text-alt);
+  --brand-experiment-560: var(--line-highlight);
+  --brand-experiment-30a: var(--pink);
+  --brand-experiment-400: var(--text-muted);
+  --brand-experiment-600: var(--red);
+  --brand-experiment-15a: var(--background-tertiary);
+  --brand-experiment-800: hsla(326, 100%, 74%, 0.2);
+  --brand-experiment-05a: var(--line-highlight);
+  --brand-experiment-10a: var(--line-highlight);
+  --brand-experiment-100: var(--bg);
+  --brand-experiment-500: var(--line-highlight);
+  --brand-experiment-160: var(--background-tertiary);
+  --brand-experiment-530: var(--pink);
+  /* if you find something RED, report a issue in GitHub, that's a way for me to discover where these colors are being applied */
+  --brand-experiment-130: red;
+  --brand-experiment-230: red;
+  --brand-experiment-260: red;
+  --brand-experiment-300: red;
+  --brand-experiment-330: red;
+  --brand-experiment-360: red;
+  --brand-experiment-430: red;
+  --brand-experiment-460: red;
+  --brand-experiment-630: red;
+  --brand-experiment-660: red;
+  --brand-experiment-700: red;
+  --brand-experiment-730: red;
+  --brand-experiment-760: red;
+  --brand-experiment-830: red;
+  --brand-experiment-860: red;
+  --brand-experiment-900: red;
+  --brand-experiment-20a: red;
+  --brand-experiment-25a: red;
+  --brand-experiment-35a: red;
+  --brand-experiment-40a: red;
+  --brand-experiment-45a: red;
+  --brand-experiment-50a: red;
+  --brand-experiment-55a: red;
+  --brand-experiment-60a: red;
+  --brand-experiment-65a: red;
+  --brand-experiment-70a: red;
+  --brand-experiment-75a: red;
+  --brand-experiment-80a: red;
+  --brand-experiment-85a: red;
+  --brand-experiment-90a: red;
+  --brand-experiment-95a: red;
+}
+
+[class*=sidebar-] {
+  background: none;
+  padding: 10px;
+  margin: 20px 0px 10px 20px;
+}
+[class*=sidebar-] .container-3w7J-x {
+  border-radius: 32px;
+}
+[class*=sidebar-] [class*=header-] {
+  margin-top: 10px;
+}
+[class*=sidebar-] [class*=header-] h1 {
+  font-family: var(--font-headline);
+  font-size: 1em;
+  padding: 10px;
+}
+[class*=sidebar-] .unreadTop-3rAB3r {
+  border-radius: 0;
+  border-top: dashed 2px var(--brown);
+  margin: 0 20px;
+}
+[class*=sidebar-] .containerDefault-3tr_sE {
+  padding: 20px 10px 0px 10px;
+}
+[class*=sidebar-] .containerDefault-3tr_sE h2 .overflow-WK9Ogt {
+  font-family: var(--font-headline);
+}
+[class*=sidebar-] [class*=name-] {
+  color: var(--brown);
+}
+
+[class*=guilds-] {
+  margin: 30px 0px 20px 20px;
+}
+[class*=guilds-] [class*=scroller-] {
+  border-radius: 32px;
+  background-color: var(--cream);
+  padding: 20px 0;
+}
+[class*=guilds-] .listItem-GuPuDH .guildSeparator-33mFX6 {
+  background-color: none;
+  border-top: dashed 2px var(--brown);
+}
+[class*=guilds-] .listItem-GuPuDH .childWrapper-anI2G9 {
+  background-color: var(--lt-brown);
+}
+[class*=guilds-] .listItem-GuPuDH .childWrapper-anI2G9:hover {
+  background-color: var(--md-brown);
+}
+[class*=guilds-] .listItem-GuPuDH .homeIcon-FuNwkv path {
+  fill: #5865F2;
+}
+[class*=guilds-] .listItem-GuPuDH .childWrapper-anI2G9:hover .homeIcon-FuNwkv path {
+  fill: var(--drk-brown);
+}
+[class*=guilds-] [class*=closedFolder] {
+  background-color: var(--lt-brown);
+}
+[class*=guilds-] [class*=closedFolder]:hover {
+  background-color: var(--md-brown);
+}
+
+[class*=sidebar-] section[class*=panels-] {
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 32px;
+}
+[class*=sidebar-] section[class*=panels-]:hover [class*=subtext-] {
+  color: var(--brown);
+}
+
+.chat-3bRxxu, .threadSidebar-1o3BTy {
+  background-color: none;
+}
+
+.container-3RCQyg {
+  border-bottom: dashed 2px var(--cream);
+}
+
+[class*=chatContent-] {
+  background-color: none;
+  margin-top: 20px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] {
+  padding: 4px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] [class*=scroller-] {
+  background-color: none;
+  margin: 10px 10px 10px 0;
+}
+[class*=chatContent-] [class*=messagesWrapper-] [class*=message-] [class*=messageContent-] {
+  background-color: var(--cream);
+  padding: 10px 10px 12px 30px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border-radius: 15px 15px 45px 45px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] [class*=message-] .avatar-1BDn8e {
+  border: solid 5px var(--cream);
+}
+[class*=chatContent-] [class*=messagesWrapper-] [class*=message-] .username-1A8OIy {
+  color: var(--cream);
+}
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD {
+  margin-bottom: 10px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD .wrapper-35wsBm,
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD .wrapperAudio-1jDe0Q {
+  border-radius: 40px 40px 20px 20px;
+  padding: 20px 30px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD .textContainer-C0szpm {
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px 30px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD .colorHeaderSecondary-3Sp3Ft {
+  border-radius: 0px 0px 20px 20px;
+}
+[class*=chatContent-] [class*=messagesWrapper-] .container-1ov-mD .embedWrapper-lXpS3L {
+  border-radius: 6px 40px 20px 6px;
+}
+
+.divider-3_HH5L {
+  border-top: dashed 2px var(--cream);
+}
+.divider-3_HH5L .content-1o0f9g {
+  background-color: var(--cream);
+  padding: 5px 10px;
+  color: var(--brown);
+}
+
+[class*=channelTextArea-] {
+  border-radius: 32px;
+  width: 100%;
+  margin: 20px 20px 20px 0;
+}
+[class*=channelTextArea-] [class*=attachedBars-] {
+  border-bottom: 1px solid var(--line-highlight);
+}
+[class*=channelTextArea-] [class*=attachedBars-] [class*=replyBar-] {
+  background-color: var(--background-secondary-alt);
+}
+[class*=channelTextArea-] [class*=scrollableContainer-] {
+  padding: 12px;
+  border-radius: 32px;
+  background-color: var(--background-secondary-alt);
+}
+
+[class*=membersWrap] {
+  margin: 20px;
+}
+[class*=membersWrap] [class*=members] {
+  border-radius: 32px;
+}
+
+.container-1r6BKw.themed-ANHk51 {
+  margin: 30px 10px 0px 30px;
+  width: auto;
+  position: relative;
+  z-index: 999;
+}
+.container-1r6BKw.themed-ANHk51 .children-19S4PO,
+.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx {
+  background-color: var(--yellow);
+  height: 100%;
+}
+.container-1r6BKw.themed-ANHk51 .children-19S4PO {
+  border-radius: 10px 0px 0px 10px;
+}
+.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx {
+  border-radius: 0px 10px 10px 0px;
+}
+.container-1r6BKw.themed-ANHk51 h3.title-29uC1r {
+  font-family: var(--font-headline);
+}
+.container-1r6BKw.themed-ANHk51 .divider-3FBTu8 {
+  background-color: var(--brown);
+  width: 2px;
+}
+.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb {
+  background-color: var(--drk-brown);
+}
+.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb .public-DraftEditorPlaceholder-root {
+  color: var(--brown);
+}
+
+.title-3qD0b-::before {
+  content: url("src/assets/ribbon-end.png");
+  position: absolute;
+  width: 73px;
+  height: 48px;
+  top: 10px;
+  left: -30px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=ac.css.map */

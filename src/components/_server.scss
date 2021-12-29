@@ -1,0 +1,43 @@
+// SERVER INFORMATION
+[class*="sidebar-"] {
+    background: none;
+    padding: 10px;
+    margin: 20px 0px 10px 20px;
+
+    .container-3w7J-x {
+        border-radius: 32px;
+    }
+
+    // SERVER NAME
+    [class*="header-"] {
+    
+        margin-top: 10px;
+
+        h1 {
+            font-family: var(--font-headline);
+            font-size: 1em;
+            padding: 10px;
+        }
+    }
+
+    // DASHED LINE
+    .unreadTop-3rAB3r {
+        border-radius: 0;
+        border-top: dashed 2px var(--brown);
+        margin: 0 20px;
+    }
+
+    // CHANNEL CATEGORIES
+    .containerDefault-3tr_sE {
+        padding: 20px 10px 0px 10px;
+        
+        h2 .overflow-WK9Ogt {
+            font-family: var(--font-headline);
+        }
+    }
+
+    // TEXT PROPERTIES FOR CHANNELS
+    [class*="name-"] {
+        color: var(--brown);
+    }
+  }

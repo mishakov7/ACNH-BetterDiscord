@@ -1,0 +1,17 @@
+// SERVER INFORMATION
+[class*="sidebar-"] {
+
+    // LOGGED IN USER INFO
+    section[class*="panels-"] {
+      margin-top: 20px;
+      padding: 8px;
+      border-radius: 32px;
+
+      &:hover {
+        [class*="subtext-"] {
+          color: var(--brown);
+        }
+      }
+    }
+
+  }

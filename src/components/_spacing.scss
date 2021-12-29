@@ -1,0 +1,86 @@
+
+
+  // WIT ??
+  [class*="container-2wlB3z"] { 
+    height: calc(100% - 20px);
+    border-radius: 32px;
+    margin: 10px 10px 10px 0;
+    [class*="membersWrap-"] {
+      margin: 5px;
+      [class*="members-"] {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  // WIT ??
+  [class*="sidebar-"] [class*="layout-"] {
+    margin-right: 6px;
+    margin-left: 0px;
+    padding-left: 6px !important;
+    height: 36px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  // WIT ??
+  [class*="privateChannels-"] {
+    border-radius: 32px;
+  }
+
+  // WIT ??
+  ::-webkit-scrollbar-track {
+    background-color: transparent!important;
+    &:hover {
+      background-color: var(--scrollbar-auto-track)!important;
+    }
+  }
+
+  // WIT ??
+  [class*="homeWrapperNormal-"] {
+
+    [class*="scroller-"] {
+      border: 1px solid var(--background-secondary);
+      background-color: var(--background-primary);
+      margin: 10px 10px 10px 0;
+      border-radius: 32px;
+    }
+  }
+  
+
+
+  // WIT ???
+  [class*="pageContent-"] {
+    background-color: var(--background-spacing);
+
+    
+    [class*="stageSection-"] {
+      border: 1px solid var(--background-secondary);
+      background-color: var(--background-primary);
+      margin: 16px 16px 16px 10px;
+      border-radius: 32px;
+    }
+    [class*="nowPlayingSidebar-"] {
+      background-color: var(--background-spacing);
+      [class*="container-"] {
+        background: var(--background-secondary);
+        height: 90vh;
+        margin: 10px;
+        border-radius: 32px;
+      }
+      [class*="emptyCard-"] {
+        background: var(--background-secondary);
+      }
+    }
+  }
+
+
+  .wrapper-39oAo3 {
+    background-color: red;
+
+    border-radius: 32px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 6px;
+  }
+  

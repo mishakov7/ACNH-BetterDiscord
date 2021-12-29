@@ -1,0 +1,100 @@
+// CHAT BODY
+.chat-3bRxxu, .threadSidebar-1o3BTy {
+    background-color: none;
+}
+
+.container-3RCQyg {
+  border-bottom: dashed 2px var(--cream);
+}
+
+// CHAT AREA
+[class*="chatContent-"] {
+    background-color: none;
+    margin-top: 20px;
+
+    [class*="messagesWrapper-"] {
+      padding: 4px;
+
+      [class*="scroller-"] {
+        background-color: none;
+        margin: 10px 10px 10px 0;
+      }
+
+      // NORMAL MESSAGES
+      [class*="message-"] {
+        [class*="messageContent-"] {
+          background-color: var(--cream);
+          padding: 10px 10px 12px 30px;
+          margin-left: 0px;
+          margin-bottom: 10px;
+          border-radius: 15px 15px 45px 45px;
+        }
+
+        .avatar-1BDn8e {
+          border: solid 5px var(--cream);
+        }
+
+        .username-1A8OIy {
+          color: var(--cream);
+        }
+      }
+
+      // OTHER MESSAGES
+      .container-1ov-mD {
+
+        margin-bottom: 10px;
+
+        .wrapper-35wsBm,
+        .wrapperAudio-1jDe0Q {
+          border-radius: 40px 40px 20px 20px;
+          padding: 20px 30px;
+        }
+
+        .textContainer-C0szpm {
+          border-radius: 40px 40px 0px 0px;
+          padding: 20px 30px;
+        }
+
+        .colorHeaderSecondary-3Sp3Ft {
+          border-radius: 0px 0px 20px 20px;
+        }
+
+        .embedWrapper-lXpS3L {
+          border-radius: 6px 40px 20px 6px;
+        }
+
+      }
+    }
+}
+
+.divider-3_HH5L {
+
+  border-top: dashed 2px var(--cream);
+
+  .content-1o0f9g {
+    background-color: var(--cream);
+    padding: 5px 10px;
+    color: var(--brown);
+  }
+}
+
+// MESSAGE TEXTAREA
+[class*="channelTextArea-"] {
+  border-radius: 32px;
+  width: 100%;
+  margin: 20px 20px 20px 0;
+
+  [class*="attachedBars-"] {
+    border-bottom: 1px solid var(--line-highlight);
+
+  [class*="replyBar-"] {
+    background-color: var(--background-secondary-alt);
+  }
+  }
+
+  [class*="scrollableContainer-"] {
+    padding: 12px;
+    border-radius: 32px;
+    background-color: var(--background-secondary-alt);
+  }
+}

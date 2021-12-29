@@ -1,0 +1,41 @@
+[class*="guilds-"] {
+    margin: 30px 0px 20px 20px;
+    
+    [class*="scroller-"] {
+        border-radius: 32px;
+        background-color: var(--cream);
+        padding: 20px 0;
+    }
+    
+    // DISCORD LOGO
+    .listItem-GuPuDH {
+        .guildSeparator-33mFX6 {
+            background-color: none;
+            border-top: dashed 2px var(--brown);
+        }
+
+        .childWrapper-anI2G9 {
+            background-color: var(--lt-brown);
+        }
+
+        .childWrapper-anI2G9:hover {
+            background-color: var(--md-brown);
+        }
+
+        .homeIcon-FuNwkv path {
+            fill: #5865F2;
+        }
+
+        .childWrapper-anI2G9:hover .homeIcon-FuNwkv path {
+            fill: var(--drk-brown);
+        }
+    }
+
+    [class*="closedFolder"] {
+        background-color: var(--lt-brown);
+    }
+
+    [class*="closedFolder"]:hover {
+        background-color: var(--md-brown);
+    }
+}

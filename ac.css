@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
 @import url("https://raw.githubusercontent.com/mishakov7/ACNH-BetterDiscord/main/src/assets/fonts/stylesheet.css");
 /* Font */
+@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/font/stylesheet.css");
+/* Font */
 :root {
   --font-primary: "Istok Web", sans-serif;
   --font-display: "Istok Web", sans-serif;
   --font-code: "Source Code Pro", monospace;
-  --font-headline: "fot-seurat_regular", sans-serif;
+  --font-headline: fot-seurat_regular, sans-serif;
   /* base colors */
   --drk-brown: #716550;
   --brown: #968059;

@@ -2,18 +2,14 @@
 
 @font-face {
     font-family: 'fot-seurat_bold';
-    src: url('fot-seurat_pro_b-webfont.otf') format('otf'),
-    url('fot-seurat_pro_b-webfont.woff2') format('woff2'),
-         url('fot-seurat_pro_b-webfont.woff') format('woff');
+    src: url('fot-seurat_pro_b-webfont.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'fot-seurat_regular';
-    src: url('fot-seurat_pro_db-webfont.otf') format('otf'),
-    url('fot-seurat_pro_db-webfont.woff2') format('woff2'),
-         url('fot-seurat_pro_db-webfont.woff') format('woff');
+    src: url('fot-seurat_pro_db-webfont.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 

@@ -1,4 +1,5 @@
-.container-1r6BKw.themed-ANHk51 {
+.container-1r6BKw.themed-ANHk51,
+.container-ZMc96U .themed-Hp1KC_ {
     // background-color: var(--yellow);
     margin: 30px 10px 0px 30px;
     width: auto;
@@ -7,16 +8,20 @@
     z-index: 999;
 
     .children-19S4PO,
-    .toolbar-1t6TWx {
+    .children-3xh0VB,
+    .toolbar-1t6TWx,
+    .toolbar-3_r2xA {
         background-color: var(--yellow);
         height: 100%;
     }
 
-    .children-19S4PO {
+    .children-19S4PO,
+    .children-3xh0VB {
         border-radius: 10px 0px 0px 10px;
     }
 
-    .toolbar-1t6TWx {
+    .toolbar-1t6TWx,
+    .toolbar-3_r2xA  {
         border-radius: 0px 10px 10px 0px;
     }
     
@@ -41,7 +46,8 @@
     }
 }
 
-.title-3qD0b-::before {
+.title-3qD0b-::before,
+.title-17SveM::before {
     content: url('https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/ribbon-end.png?raw=true');
     position: absolute;
     width: 73px;

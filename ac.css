@@ -315,38 +315,56 @@
   margin-right: 20px;
 }
 
-.container-1r6BKw.themed-ANHk51 {
+.container-1r6BKw.themed-ANHk51,
+.container-ZMc96U .themed-Hp1KC_ {
   margin: 30px 10px 0px 30px;
   width: auto;
   position: relative;
   z-index: 999;
 }
 .container-1r6BKw.themed-ANHk51 .children-19S4PO,
-.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx {
+.container-1r6BKw.themed-ANHk51 .children-3xh0VB,
+.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx,
+.container-1r6BKw.themed-ANHk51 .toolbar-3_r2xA,
+.container-ZMc96U .themed-Hp1KC_ .children-19S4PO,
+.container-ZMc96U .themed-Hp1KC_ .children-3xh0VB,
+.container-ZMc96U .themed-Hp1KC_ .toolbar-1t6TWx,
+.container-ZMc96U .themed-Hp1KC_ .toolbar-3_r2xA {
   background-color: var(--yellow);
   height: 100%;
 }
-.container-1r6BKw.themed-ANHk51 .children-19S4PO {
+.container-1r6BKw.themed-ANHk51 .children-19S4PO,
+.container-1r6BKw.themed-ANHk51 .children-3xh0VB,
+.container-ZMc96U .themed-Hp1KC_ .children-19S4PO,
+.container-ZMc96U .themed-Hp1KC_ .children-3xh0VB {
   border-radius: 10px 0px 0px 10px;
 }
-.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx {
+.container-1r6BKw.themed-ANHk51 .toolbar-1t6TWx,
+.container-1r6BKw.themed-ANHk51 .toolbar-3_r2xA,
+.container-ZMc96U .themed-Hp1KC_ .toolbar-1t6TWx,
+.container-ZMc96U .themed-Hp1KC_ .toolbar-3_r2xA {
   border-radius: 0px 10px 10px 0px;
 }
-.container-1r6BKw.themed-ANHk51 h3.title-29uC1r {
+.container-1r6BKw.themed-ANHk51 h3.title-29uC1r,
+.container-ZMc96U .themed-Hp1KC_ h3.title-29uC1r {
   font-family: var(--font-headline);
 }
-.container-1r6BKw.themed-ANHk51 .divider-3FBTu8 {
+.container-1r6BKw.themed-ANHk51 .divider-3FBTu8,
+.container-ZMc96U .themed-Hp1KC_ .divider-3FBTu8 {
   background-color: var(--brown);
   width: 2px;
 }
-.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb {
+.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb,
+.container-ZMc96U .themed-Hp1KC_ [class*=search-] .searchBar-3dMhjb {
   background-color: var(--drk-brown);
 }
-.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb .public-DraftEditorPlaceholder-root {
+.container-1r6BKw.themed-ANHk51 [class*=search-] .searchBar-3dMhjb .public-DraftEditorPlaceholder-root,
+.container-ZMc96U .themed-Hp1KC_ [class*=search-] .searchBar-3dMhjb .public-DraftEditorPlaceholder-root {
   color: var(--brown);
 }
 
-.title-3qD0b-::before {
+.title-3qD0b-::before,
+.title-17SveM::before {
   content: url("https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/ribbon-end.png?raw=true");
   position: absolute;
   width: 73px;

@@ -157,7 +157,8 @@
   padding: 10px;
   margin: 20px 0px 10px 20px;
 }
-[class*=sidebar-] .container-3w7J-x {
+[class*=sidebar-] .container-3w7J-x,
+[class*=sidebar-] .container-1NXEtd {
   border-radius: 32px;
 }
 [class*=sidebar-] [class*=header-] {
@@ -305,6 +306,13 @@
 }
 [class*=membersWrap] [class*=members] {
   border-radius: 32px;
+}
+
+.container-2o3qEW {
+  border-radius: 32px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .container-1r6BKw.themed-ANHk51 {

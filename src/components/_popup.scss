@@ -2,10 +2,91 @@
 
     [class*="layer-"] {
 
+        color: var(--cream);
+
         [class*="tooltipContent-"] {
             color: var(--cream);
             font-family: var(--font-primary);
             font-weight: 400;
+        }
+    }
+
+    [id*="popout_"] {
+        color: var(--cream);
+
+        [class*="userPopout-"] {
+            border-radius: 75px 12px 32px 32px;
+
+            [class*="headerText-"],
+            [class*="headerTag"],
+            [class*="nickname-"] {
+                color: var(--cream);
+                font-family: var(--font-headline);
+                letter-spacing: 0.5px;
+                font-size: 14pt;
+            }
+
+            [class*="headerText-"],
+            [class*="headerTag"] {
+                font-size: 12pt;
+            }
+
+            [class*="body-"] {
+                [class*="customStatusText-"],
+                [class*="aboutMeBody-"],
+                [class*="bodyTitle-"],
+                textarea {
+                    color: var(--cream);
+                }
+
+                textarea:focus {
+                    background-color: var(--brown);
+                }
+
+                [class*="bodyTitle-"],
+                [class*="aboutMeTitle-"] {
+                    font-family: var(--font-headline);
+                    font-size: 8pt;
+                }
+
+                a {
+                    color: var(--background-tertiary);
+                }
+
+                [class*="rolesList-"] {
+                    background: transparent!important;
+
+                    button svg path {
+                        fill: var(--drk-brown);
+                    }
+                }
+            }
+
+            [class*="footer-"] {
+                background-color: var(--drk-brown);
+                
+                [class*="inputWrapper-"] {
+                    color: #FFF;
+
+                    [class*="inputDefault-"] {
+                        background-color: red;
+                        background-image: url("https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/button-stripes.png");
+                        border: var(--btn-border);
+                        border-radius: 50px;
+                        height: 50px;
+                        padding: 10px 20px;
+                    }
+
+                    [class*="input-"],
+                    [class*="input-"]:focus,
+                    [class*="input-"]:active,
+                    [class*="input-"]::placeholder {
+                        color: #FFF;
+                        font-family: var(--font-headline);
+                        font-size: 10pt;
+                    }
+                }
+            }
         }
     }
 }

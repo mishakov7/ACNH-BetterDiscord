@@ -7,6 +7,19 @@
   border-bottom: dashed 2px var(--cream);
 }
 
+[id*="chat-messages-"] {
+
+  [class*="emptyChannelIcon-"] {
+    // Create a cute channel icon for animal crossing
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  [class*="fontDisplay-"] {
+    font-family: var(--font-headline);
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
 // CHAT AREA
 [class*="chatContent-"] {
     background-color: none;
@@ -20,6 +33,15 @@
         margin: 10px 10px 10px 0;
       }
 
+      [class*="mentioned-"]:before,
+      [class*="ephemeral-"]:before,
+      [class*="replying-"]:before {
+        width: 6px;
+        margin: 50px 0;
+        border-radius: 20px;
+        background-color: rgba(46, 41, 33, 0.1);
+      }
+
       // NORMAL MESSAGES
       [class*="message-"] {
         max-width: 100%;
@@ -30,29 +52,124 @@
           background-color: rgba(206, 175, 128, 0.01);
         }
 
+        // MESSAGE REPLIES
+        [class*="repliedMessage-"]::before {
+          border-left: 2px solid var(--cream);
+          border-right: 0 solid var(--cream);
+          border-top: 2px solid var(--cream);
+          border-bottom: 0 solid var(--cream);
+        }
+
+        [class*="repliedMessage-"] {
+
+          [class*="messageContent-"] {
+            background-color: transparent;
+            padding: 0;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            color: var(--cream);
+
+            a {
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+
+        }
+
+        // INDIVIDUAL MESSAGE
         [class*="messageContent-"] {
           background-color: var(--cream);
-          padding: 10px 30px 15px 30px;
+          padding: 10px 20px;
           margin-left: 0px;
           margin-bottom: 10px;
 
-          border-radius: 15px 15px 45px 45px;
+          // border-radius: 50px 45px;
+          border-radius: 2em 1.8em;
           inline-size: max-content;
           width: max-content;
           max-width: 100%;
           overflow-wrap: break-word;
+          
+
+          code {
+            background-color: var(--drk-brown);
+            color: var(--cream);
+            border-radius: 5px;
+            padding: 10px;
+            border: none;
+
+            [class*="-built_in"] { color: var(--bg-pink); }
+            [class*="-keyword"] { color: var(--bg-teal); }
+            [class*="-number"] { color: var(--bg-maple); }
+            [class*="-comment"] { color: var(--bg-lime); }
+            [class*="-string"] { color: var(--md-brown); }
+            [class*="-function"] [class*="-title"] { color: var(--bg-blue); }
+            [class*="-class"] [class*="-title"] { color: var(--yellow); }
+          }
+
+          .inline {
+            background-color: var(--drk-brown);
+            color: var(--cream);
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+          }
+        }
+
+        // REACTIONS
+        [class*="reactions-"] {
+
+          [class*="reaction-"]:hover {
+            background-color: var(--drk-brown);
+          }
+
+          [class*="reaction-"] {
+            display: flex;
+            place-items: center;
+            border-radius: 2em;
+            background-color: transparent;
+            border: solid 2px var(--cream);
+
+            [class*="reactionInner-"] {
+              display: flex;
+              place-items: center;
+              position: relative;
+              font-family: var(--font-headline);
+
+              [class*="reactionCount-"] {
+                color: var(--cream);
+              }
+            }
+          }
+
+          [class*="reactionMe-"] {
+            background-color: var(--cream);
+
+            [class*="reactionInner-"] {
+              [class*="reactionCount-"] {
+                color: var(--drk-brown);
+              }
+            }
+          }
+
         }
 
         [class*="avatar-"] {
           border: solid 5px var(--cream);
         }
 
+        [class*="header-"] {
+          margin-bottom: 10px;
+        }
+
         [class*="username-"] {
           color: var(--cream);
+          font-family: var(--font-headline);
         }
 
         [class*="timestamp-"] {
-          color: var(--brown);
+          color: rgba(0, 0, 0, 0.5);
+          font-weight: 700;
         } 
 
         [class*="buttonContainer-"] {
@@ -65,10 +182,15 @@
 
           [class*="button-"] {
             border-radius: 50px 50px 50px 50px;
+            background-color: var(--drk-brown);
 
             [class*="icon-"] path {
-              fill: rgba(39, 35, 29, 0.5);
+              fill: var(--cream);
             }
+          }
+
+          [class*="button-"]:hover {
+            background-color: var(--brown);
           }
         }
       }
@@ -80,17 +202,17 @@
 
         [class*="wrapper-"],
         [class*="wrapperAudio-"] {
-          border-radius: 40px 40px 20px 20px;
+          border-radius: 2em 1.8em;
           padding: 20px 30px;
         }
 
         [class*="textContainer-"] {
-          border-radius: 40px 40px 0px 0px;
+          border-radius: 2em 2em 0px 0px;
           padding: 20px 30px;
         }
 
         [class*="colorHeaderSecondary-"] {
-          border-radius: 0px 0px 20px 20px;
+          border-radius: 0px 0px 2em 2em;
         }
 
         [class*="embedWrapper-"] {
@@ -102,7 +224,9 @@
 }
 
 [class*="divider-"] {
-  border-top: dashed 2px var(--cream);
+  border-top: solid 2px var(--cream);
+  border-bottom: solid 2px var(--cream);
+  border-radius: 20px;
 
   [class*="content-"] {
     background-color: var(--cream);
@@ -113,7 +237,7 @@
 
 // MESSAGE TEXTAREA
 [class*="channelTextArea-"] {
-  border-radius: 32px;
+  border-radius: 1em;
   width: 100%;
   margin: 20px 20px 20px 0;
 

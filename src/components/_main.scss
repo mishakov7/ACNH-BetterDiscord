@@ -8,9 +8,9 @@
     
     // WIT ??
     --text-positive: hsl(240, 9%, 89%);
-    --text-warning: hsla(350, 75%, 65%, 0.8);
-    --text-danger: hsl(350, 75%, 65%);
-    --text-brand: var(--pink);
+    --text-warning: var(--red);
+    --text-danger: var(--red);
+    --text-brand: var(--red);
 
     --interactive-normal: var(--brown);
     --interactive-hover: var(--drk-brown);
@@ -19,7 +19,7 @@
     --background-primary: none;
     --background-secondary: var(--cream);
     --background-secondary-alt: var(--cream);
-    --background-tertiary: var(--bg-teal);
+    --background-tertiary: var(--bg-blue);
     --background-accent: none;
     --background-floating: var(--drk-brown);
     --background-mobile-primary: var(--bg);
@@ -92,7 +92,7 @@
   
   
   [data-popout-root], html {
-    --brand-experiment: hsla(326, 100%, 74%, 0.9);
+    --brand-experiment: var(--red);
     --brand-experiment-200: var(--text-alt);
     --brand-experiment-560: var(--line-highlight);
     --brand-experiment-30a: var(--pink);

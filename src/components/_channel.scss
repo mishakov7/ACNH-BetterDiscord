@@ -1,5 +1,6 @@
+
 .container-1r6BKw.themed-ANHk51,
-.container-ZMc96U .themed-Hp1KC_ {
+.container-ZMc96U.themed-Hp1KC_ {
     // background-color: var(--yellow);
     margin: 30px 10px 0px 30px;
     width: auto;
@@ -7,47 +8,63 @@
     position: relative;
     z-index: 999;
 
-    .children-19S4PO,
-    .children-3xh0VB,
-    .toolbar-1t6TWx,
-    .toolbar-3_r2xA {
-        background-color: var(--yellow);
+    [class*="children-"],
+    [class*="toolbar-"] {
+        background-color: var(--yellow)!important;
         height: 100%;
+
+        [class*="icon-"] path {
+            fill: var(--drk-brown);
+        }
+
+        [class*="caret-"],
+        [class*="colorInteractiveNormal-"] {
+            color: var(--drk-brown);
+            font-family: var(--font-headline);
+        }
+
+        [class*="icon-"]:hover path {
+            fill: var(--brown);
+        }
     }
 
-    .children-19S4PO,
-    .children-3xh0VB {
+    [class*="children-"] {
         border-radius: 10px 0px 0px 10px;
     }
 
-    .toolbar-1t6TWx,
-    .toolbar-3_r2xA  {
+    [class*="toolbar-"] {
         border-radius: 0px 10px 10px 0px;
     }
     
-    h3.title-29uC1r {
+
+    [class*="title-"] {
         font-family: var(--font-headline);
     }
     
-    .divider-3FBTu8 {
+    [class*="divider-"] {
         background-color: var(--brown);
         width: 2px;
     }
 
     [class*="search-"] {
 
-        .searchBar-3dMhjb {
+        [class*="searchBar-"] {
             background-color: var(--drk-brown);
+            padding: 0 5px;
 
             .public-DraftEditorPlaceholder-root {
                 color: var(--brown);
+            }
+
+            .public-DraftEditor-content {
+                color: var(--cream);
             }
         }
     }
 }
 
 .title-3qD0b-::before,
-.title-17SveM::before {
+.title-31SJ6t::before {
     content: url('https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/ribbon-end.png?raw=true');
     position: absolute;
     width: 73px;

@@ -4,36 +4,76 @@
     padding: 10px;
     margin: 20px 0px 10px 20px;
 
-    .container-3w7J-x,
-    .container-1NXEtd {
+    [class*="container-"] {
         border-radius: 32px;
+    }
+
+    [class*="animatedContainer-"] {
+        border-radius: 32px 32px 0 0;
     }
 
     // SERVER NAME
     [class*="header-"] {
     
         margin-top: 10px;
+        border-radius: 50px;
 
         h1 {
             font-family: var(--font-headline);
             font-size: 1em;
             padding: 10px;
         }
+
     }
 
     // DASHED LINE
-    .unreadTop-3rAB3r {
-        border-radius: 0;
-        border-top: dashed 2px var(--brown);
-        margin: 0 20px;
-    }
+    /* Uncommented because it looks bad on servers with banners. */
+    /* [class*="unreadTop-"] {
+           border-radius: 0;
+           border-top: dashed 2px var(--brown);
+           margin: 0 20px;
+     }*/
 
     // CHANNEL CATEGORIES
-    .containerDefault-3tr_sE {
-        padding: 20px 10px 0px 10px;
-        
-        h2 .overflow-WK9Ogt {
+    [class*="mainContent-"] {
+        h2 [class*="overflow-"] {
             font-family: var(--font-headline);
+        }
+    }
+
+    [class*="arrow-"],
+    .mainContent-uDGa6R {
+        margin-left: 10px;
+    }
+
+    [class*="containerDefault-"] {
+
+        [class*="icon-"] path {
+            fill: var(--brown);
+        }
+
+        [class*="channelName-"] {
+            font-family: var(--font-primary);
+            font-weight: 400;
+        }
+
+        [class*="unread-"] {
+            background-color: var(--red);
+        }
+
+        [class*="userLimit-"] {
+            
+            [class*="total-"] {
+                background-color: var(--red);
+            }
+
+            [class*="total-"]::after{
+                border-right-color: var(--red);
+            }
+
+            [class*="users-"] {
+                background-color: var(--drk-brown);
+            }
         }
     }
 

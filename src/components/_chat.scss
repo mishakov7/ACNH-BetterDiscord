@@ -1,5 +1,5 @@
 // CHAT BODY
-.chat-3bRxxu, .threadSidebar-1o3BTy {
+[class*="chat-"], [class*="threadSidebar-"] {
     background-color: none;
 }
 
@@ -22,44 +22,78 @@
 
       // NORMAL MESSAGES
       [class*="message-"] {
-        [class*="messageContent-"] {
-          background-color: var(--cream);
-          padding: 10px 10px 12px 30px;
-          margin-left: 0px;
-          margin-bottom: 10px;
-          border-radius: 15px 15px 45px 45px;
+        max-width: 100%;
+        margin-right: 50px;
+        border-radius: 32px;
+
+        :hover {
+          background-color: rgba(206, 175, 128, 0.01);
         }
 
-        .avatar-1BDn8e {
+        [class*="messageContent-"] {
+          background-color: var(--cream);
+          padding: 10px 30px 15px 30px;
+          margin-left: 0px;
+          margin-bottom: 10px;
+
+          border-radius: 15px 15px 45px 45px;
+          inline-size: max-content;
+          width: max-content;
+          max-width: 100%;
+          overflow-wrap: break-word;
+        }
+
+        [class*="avatar-"] {
           border: solid 5px var(--cream);
         }
 
-        .username-1A8OIy {
+        [class*="username-"] {
           color: var(--cream);
+        }
+
+        [class*="timestamp-"] {
+          color: var(--brown);
+        } 
+
+        [class*="buttonContainer-"] {
+
+          margin-top: 30px;
+
+          [class*="wrapper-"] {
+            padding: 0;
+          }
+
+          [class*="button-"] {
+            border-radius: 50px 50px 50px 50px;
+
+            [class*="icon-"] path {
+              fill: rgba(39, 35, 29, 0.5);
+            }
+          }
         }
       }
 
       // OTHER MESSAGES
-      .container-1ov-mD {
+      [class*="container-"] {
 
         margin-bottom: 10px;
 
-        .wrapper-35wsBm,
-        .wrapperAudio-1jDe0Q {
+        [class*="wrapper-"],
+        [class*="wrapperAudio-"] {
           border-radius: 40px 40px 20px 20px;
           padding: 20px 30px;
         }
 
-        .textContainer-C0szpm {
+        [class*="textContainer-"] {
           border-radius: 40px 40px 0px 0px;
           padding: 20px 30px;
         }
 
-        .colorHeaderSecondary-3Sp3Ft {
+        [class*="colorHeaderSecondary-"] {
           border-radius: 0px 0px 20px 20px;
         }
 
-        .embedWrapper-lXpS3L {
+        [class*="embedWrapper-"] {
           border-radius: 6px 40px 20px 6px;
         }
 
@@ -67,11 +101,10 @@
     }
 }
 
-.divider-3_HH5L {
-
+[class*="divider-"] {
   border-top: dashed 2px var(--cream);
 
-  .content-1o0f9g {
+  [class*="content-"] {
     background-color: var(--cream);
     padding: 5px 10px;
     color: var(--brown);

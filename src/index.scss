@@ -1,3 +1,11 @@
+/**
+ * @name Animal Crossing
+ * @version 1.0.0
+ * @description A description of your theme.
+ * @author clowstaff
+ * @website https://betterdiscord.app/
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
 
 // import the main files, including variables
@@ -5,9 +13,11 @@
 @import './components/main';
 
 // personal
+@import './components/theme';
 @import './components/server';
 @import './components/serverlist';
 @import './components/personal';
 @import './components/chat';
 @import './components/members';
 @import './components/channel';
+@import './components/popup';

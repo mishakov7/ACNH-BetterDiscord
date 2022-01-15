@@ -1,18 +1,34 @@
 [class*="membersWrap"] {
-    margin: 20px;
+    padding: 0 10px;
 
     [class*="members"] {
         border-radius: 32px;
+        color: var(--drk-brown);
+    }
+
+    [class*="membersGroup-"] {
+        font-family: var(--font-headline);
+    }
+
+    [class*="activityText-"] {
+        color: var(--drk-brown);
+    }
+
+    [class*="name-"] {
+        font-family: var(--font-headline);
+        font-size: 10pt;
+    }
+
+    [class*="roleColor-"] {
+        color: var(--brown);
     }
 }
 
 .container-2o3qEW {
     border-radius: 32px;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
 
-    // .membersWrap-3NUR2t {
-    //     color: red;
-    // }
 }

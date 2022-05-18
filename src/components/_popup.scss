@@ -1,13 +1,52 @@
 [class*="layerContainer-"] {
 
+    [class*="container-"] {
+        background-color: var(--drk-brown);
+        border-radius: 24px;
+        border: none;
+
+        [class*="resultsGroup-"] {
+            border: none;
+        }
+    }
+
     [class*="layer-"] {
 
         color: var(--cream);
 
-        [class*="tooltipContent-"] {
+        [class*="tooltipContent-"],
+        [class*="guildNameText-"] {
             color: var(--cream);
             font-family: var(--font-primary);
             font-weight: 400;
+        }
+
+        [class*="menu-"] {
+            border-radius: 32px;
+            padding: 8px 0;
+
+            [class*="item-"] {
+                margin: 0;
+            }
+
+            [class*="separator-"] {
+                border: none;
+                height: 2px;
+                background-color: var(--cream);
+                border-radius: 20px;
+            }
+
+            [class*="scroller-"] div {
+                color: var(--cream);
+                font-size: 11pt;
+                // margin-bottom: 0;
+            }
+        }
+
+        [class*="bar-"] {
+            [class*="barFill-"] {
+                background-color: var(--background-tertiary);
+            }
         }
     }
 
@@ -20,7 +59,6 @@
             [class*="headerText-"],
             [class*="headerTag"],
             [class*="nickname-"] {
-                color: var(--cream);
                 font-family: var(--font-headline);
                 letter-spacing: 0.5px;
                 font-size: 14pt;
@@ -28,15 +66,33 @@
 
             [class*="headerText-"],
             [class*="headerTag"] {
+                color: var(--cream);
                 font-size: 12pt;
             }
 
+            [class*="nickname-"] {
+                margin-bottom: 5px;
+                color: var(--md-brown);
+            }
+
+
             [class*="body-"] {
+                [class*="divider-"] {
+                    border: none;
+                    height: 2px;
+                    border-radius: 20px;
+                }
+
                 [class*="customStatusText-"],
                 [class*="aboutMeBody-"],
+                [class*="userInfoBody-"],
                 [class*="bodyTitle-"],
                 textarea {
                     color: var(--cream);
+
+                    .inline {
+                        color: var(--drk-brown);
+                    }
                 }
 
                 textarea:focus {
@@ -69,8 +125,8 @@
                     color: #FFF;
 
                     [class*="inputDefault-"] {
-                        background-color: red;
-                        background-image: url("https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/button-stripes.png");
+                        background-color: var(--btn-color);
+                        background-image: var(--btn-stripes);
                         border: var(--btn-border);
                         border-radius: 50px;
                         height: 50px;
@@ -86,6 +142,50 @@
                         font-size: 10pt;
                     }
                 }
+            }
+        }
+
+        [class*="headerTextNormal-"],
+        [class*="eyebrow-"],
+        [class*="bodyTitle-"],
+        [class*="overflow-"] {
+            font-family: var(--font-headline);
+            letter-spacing: 0.5px;
+            font-size: 8pt;
+            color: var(--cream)!important;
+        }
+
+
+        [class*="activityUserPopout-"] {
+            [class*="contentImagesUserPopout-"],
+            [class*="contentGameImageUserPopout-"],
+            [class*="activityName-"],
+            [class*="nameNormal-"],
+            [class*="details-"],
+            [class*="nameWrap-"] {
+                color: var(--cream);
+            }
+
+            [class*="gameIcon-"] path {
+                fill: var(--cream);
+            }
+
+            [class*="button-"] {
+                background-color: var(--brown);
+            }
+            
+            [class*="button-"]:hover {
+                background-color: var(--background-tertiary)!important;
+            }
+        }
+
+        [class*="timeBarUserPopout-"] {
+            [class*="bar-"] {
+                background-color: var(--brown);
+            }
+
+            [class*="barInner-"] {
+                background-color: var(--background-tertiary);
             }
         }
     }

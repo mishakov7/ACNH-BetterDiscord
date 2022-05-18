@@ -19,7 +19,7 @@
     --background-primary: none;
     --background-secondary: var(--cream);
     --background-secondary-alt: var(--cream);
-    --background-tertiary: var(--bg-teal);
+    --background-tertiary: var(--bg-pink);
     --background-accent: none;
     --background-floating: var(--drk-brown);
     --background-mobile-primary: var(--bg);
@@ -107,5 +107,35 @@
     --brand-experiment-160: var(--background-tertiary);
     --brand-experiment-530: var(--pink);
   
+
+  }
+
+  [class*="typeWindows-"] {
+    background-color: #5865F2;
+    padding: 5px 0;
+    margin-top: 0px;
+
+    [class*="winButtonClose-"] svg polygon,
+    [aria-label="Minimize"] svg rect,
+    svg path {
+      fill: #FFF;
+    }
+
+    [aria-label="Maximize"] svg rect {
+      stroke: #FFF;
+    }
+
+    [aria-label="Minimize"]:hover,
+    [aria-label="Maximize"]:hover {
+      background-color: var(--yellow);
+    }
+
+    [aria-label="Minimize"]:hover svg rect {
+      fill: var(--drk-brown);
+    }
+
+    [aria-label="Maximize"]:hover svg rect {
+      stroke: var(--drk-brown);
+    }
 
   }

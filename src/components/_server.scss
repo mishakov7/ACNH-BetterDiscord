@@ -4,8 +4,30 @@
     padding: 10px;
     margin: 20px 0px 10px 20px;
 
-    [class*="container-"] {
+    [class*="container-"],
+    [class*="privateChannels-"] {
         border-radius: 32px;
+    }
+
+    [class*="privateChannels-"] {
+
+        [class*="searchBar-"] {
+            margin: 10px;
+
+            [class*="searchBarComponent-"] {
+                background-color: var(--drk-brown);
+            }
+        }
+
+        [class*="avatar-"] path:first-of-type {
+            fill: var(--drk-brown);
+        }
+
+        [class*="headerText-"],
+        [class*="activityText-"],
+        [class*="subText-"] {
+            color: var(--drk-brown);
+        }
     }
 
     [class*="animatedContainer-"] {

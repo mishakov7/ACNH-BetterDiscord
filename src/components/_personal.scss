@@ -14,4 +14,17 @@
       }
     }
 
+    [class*="rtcConnectionStatus-"] {
+      // color: black;
+
+      [class*="contents-"] {
+        color: var(--background-tertiary);
+      }
+
+      [class*="ping-"] path {
+        fill: var(--background-tertiary);
+      }
+
+    }
+
   }

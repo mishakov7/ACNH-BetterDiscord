@@ -38,4 +38,16 @@
     [class*="closedFolder"]:hover {
         background-color: var(--md-brown);
     }
+
+    [class*="pill-"] {
+        [class*="item-"] {
+            background-color: var(--brown);
+        }
+    }
+
+    [class*="upperBadge-"] {
+        [class*="iconBadge-"] path {
+            fill: var(--drk-brown);
+        }
+    }
 }

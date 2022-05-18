@@ -1,6 +1,12 @@
 [class*="membersWrap"] {
     padding: 0 10px;
 
+    border-radius: 32px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
     [class*="members"] {
         border-radius: 32px;
         color: var(--drk-brown);
@@ -8,6 +14,11 @@
 
     [class*="membersGroup-"] {
         font-family: var(--font-headline);
+        margin: 0 20px;
+    }
+
+    [class*="member-"] {
+        margin: 0 20px;
     }
 
     [class*="activityText-"] {
@@ -22,6 +33,10 @@
     [class*="roleColor-"] {
         color: var(--brown);
     }
+
+    [class*="icon-"] path {
+        fill: var(--drk-brown);
+    }
 }
 
 .container-2o3qEW {
@@ -30,5 +45,19 @@
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+
+    [class*="membersWrap"] {
+        margin-top: 0;
+
+        [class*="membersGroup-"] {
+            font-family: var(--font-headline);
+            margin: 0;
+        }
+    
+        [class*="member-"] {
+            margin: 0;
+        }
+    
+    }
 
 }

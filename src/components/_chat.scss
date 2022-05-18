@@ -11,7 +11,7 @@
 
   [class*="emptyChannelIcon-"] {
     // Create a cute channel icon for animal crossing
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--drk-brown);
   }
 
   [class*="fontDisplay-"] {
@@ -211,7 +211,7 @@
     }
 
     [class*="username-"] {
-      color: var(--cream);
+      color: var(--drk-brown);
       font-family: var(--font-headline);
     }
 
@@ -297,12 +297,12 @@
 }
 
 [class*="divider-"] {
-  border-top: solid 2px var(--cream);
-  border-bottom: solid 2px var(--cream);
+  border-top: solid 2px var(--yellow);
+  border-bottom: solid 2px var(--yellow);
   border-radius: 20px;
 
   [class*="content-"] {
-    background-color: var(--cream);
+    background-color: var(--yellow);
     padding: 5px 10px;
     color: var(--brown);
   }
@@ -330,17 +330,18 @@
 }
 
 [class*="typing-"] {
-  bottom: 95px;
+  margin-top: 20px;
 }
 
 .zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb {
   overflow: visible;
 }
 
-.username-h_Y3Us {
+[class*="username-"] {
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 10pt;
+  color: var(--drk-brown);
 }
 
 [class*="callContainer-"] {

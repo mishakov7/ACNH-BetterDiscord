@@ -36,6 +36,7 @@
   --btn-color: #00C2B7;
   --btn-border: solid 5px #4AE2D8;
   --btn-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/button-stripes.png");
+  --brand-experiment: #5865F2;
 }
 
 [class*=theme-dark], [class*=theme-light] {
@@ -439,7 +440,7 @@
 }
 
 [id*=chat-messages-] [class*=emptyChannelIcon-] {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--drk-brown);
 }
 [id*=chat-messages-] [class*=fontDisplay-] {
   font-family: var(--font-headline);
@@ -601,7 +602,7 @@
   margin-bottom: 10px;
 }
 [class*=messagesWrapper-] [class*=message-] [class*=username-] {
-  color: var(--cream);
+  color: var(--drk-brown);
   font-family: var(--font-headline);
 }
 [class*=messagesWrapper-] [class*=message-] [class*=timestamp-] {
@@ -665,12 +666,12 @@
 }
 
 [class*=divider-] {
-  border-top: solid 2px var(--cream);
-  border-bottom: solid 2px var(--cream);
+  border-top: solid 2px var(--yellow);
+  border-bottom: solid 2px var(--yellow);
   border-radius: 20px;
 }
 [class*=divider-] [class*=content-] {
-  background-color: var(--cream);
+  background-color: var(--yellow);
   padding: 5px 10px;
   color: var(--brown);
 }
@@ -693,17 +694,18 @@
 }
 
 [class*=typing-] {
-  bottom: 95px;
+  margin-top: 20px;
 }
 
 .zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb {
   overflow: visible;
 }
 
-.username-h_Y3Us {
+[class*=username-] {
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 10pt;
+  color: var(--drk-brown);
 }
 
 [class*=callContainer-] {
@@ -943,6 +945,22 @@
   color: #FFF;
   font-family: var(--font-headline);
   font-size: 10pt;
+}
+[class*=layerContainer-] [id*=popout_] [class*=animatorBottom-] [class*=container-],
+[class*=layerContainer-] [id*=popout_] [class*=animatorTop-] [class*=container-] {
+  background-color: var(--brown);
+}
+[class*=layerContainer-] [id*=popout_] [class*=animatorBottom-] [class*=container-] [class*=item-] [class*=itemLabel-],
+[class*=layerContainer-] [id*=popout_] [class*=animatorTop-] [class*=container-] [class*=item-] [class*=itemLabel-] {
+  color: var(--cream);
+}
+[class*=layerContainer-] [id*=popout_] [class*=animatorBottom-] [class*=container-] [class*=item-]:hover,
+[class*=layerContainer-] [id*=popout_] [class*=animatorTop-] [class*=container-] [class*=item-]:hover {
+  background-color: var(--cream);
+}
+[class*=layerContainer-] [id*=popout_] [class*=animatorBottom-] [class*=container-] [class*=item-]:hover [class*=itemLabel-],
+[class*=layerContainer-] [id*=popout_] [class*=animatorTop-] [class*=container-] [class*=item-]:hover [class*=itemLabel-] {
+  color: var(--drk-brown);
 }
 [class*=layerContainer-] [id*=popout_] [class*=headerTextNormal-],
 [class*=layerContainer-] [id*=popout_] [class*=eyebrow-],

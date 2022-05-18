@@ -145,6 +145,29 @@
             }
         }
 
+        [class*="animatorBottom-"],
+        [class*="animatorTop-"] {
+            [class*="container-"] {
+                background-color: var(--brown);
+
+                [class*="item-"] {
+                    [class*="itemLabel-"] {
+                        color: var(--cream);
+                    }
+                }
+
+                [class*="item-"]:hover {
+                    background-color: var(--cream);
+
+                    [class*="itemLabel-"] {
+                        color: var(--drk-brown);
+                    }
+    
+                }
+            }
+            
+        }
+
         [class*="headerTextNormal-"],
         [class*="eyebrow-"],
         [class*="bodyTitle-"],

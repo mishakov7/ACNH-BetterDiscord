@@ -24,6 +24,7 @@
   --cream: #F5F3E5;
   --gray: #CFCEC2;
   --yellow: #FFEB4C;
+  --lt-yellow: #F8EFAE;
   --white: #FFF;
   --red: #e75050;
   --green: rgb(51, 182, 80);
@@ -35,10 +36,30 @@
   --bg-maple: #E49366;
   --btn-color: #00C2B7;
   --btn-border: solid 5px #4AE2D8;
-  --btn-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/button-stripes.png");
+  --teal-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/teal-stripes.png");
+  --yellow-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/yellow-stripes.png");
+  --btn-anim: peppermint 6s infinite linear;
   --brand-experiment: #5865F2;
 }
 
+@keyframes peppermint {
+  from {
+    background-position-x: -8px;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+@keyframes movehorizon {
+  from {
+    background-position-x: -8px;
+    background-position-y: -8px;
+  }
+  to {
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+}
 [class*=theme-dark], [class*=theme-light] {
   --header-primary: var(--drkbrown);
   --header-secondary: var(--drkbrown);
@@ -165,6 +186,9 @@
 [class*=theme-dark] .bg-1QIAus, [class*=theme-light] [class*=bg-],
 [class*=theme-light] .bg-1QIAus {
   background-image: url("https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/acnh-repeat.png?raw=true");
+  background-position-x: 0px;
+  background-position-y: 0px;
+  animation: movehorizon 180s infinite linear;
 }
 [class*=theme-dark] .wrapper-3WhCwL, [class*=theme-light] .wrapper-3WhCwL {
   background: var(--cream);
@@ -355,6 +379,13 @@
 [class*=sidebar-] [class*=arrow-],
 [class*=sidebar-] .mainContent-uDGa6R {
   margin-left: 10px;
+}
+[class*=sidebar-] [class*=containerDefault-] [class*=mainContent-]:hover::before {
+  border-radius: 24px;
+  background-color: var(--lt-yellow);
+  background-image: var(--yellow-stripes);
+  background-size: 75px;
+  animation: var(--btn-anim);
 }
 [class*=sidebar-] [class*=containerDefault-] [class*=icon-] path {
   fill: var(--brown);
@@ -932,11 +963,16 @@
 }
 [class*=layerContainer-] [id*=popout_] [class*=userPopout-] [class*=footer-] [class*=inputWrapper-] [class*=inputDefault-] {
   background-color: var(--btn-color);
-  background-image: var(--btn-stripes);
-  border: var(--btn-border);
+  border: solid 5px var(--btn-color);
   border-radius: 50px;
   height: 50px;
   padding: 10px 20px;
+}
+[class*=layerContainer-] [id*=popout_] [class*=userPopout-] [class*=footer-] [class*=inputWrapper-] [class*=inputDefault-]:focus {
+  background-image: var(--teal-stripes);
+  background-position-x: 0px;
+  border: var(--btn-border);
+  animation: var(--btn-anim);
 }
 [class*=layerContainer-] [id*=popout_] [class*=userPopout-] [class*=footer-] [class*=inputWrapper-] [class*=input-],
 [class*=layerContainer-] [id*=popout_] [class*=userPopout-] [class*=footer-] [class*=inputWrapper-] [class*=input-]:focus,

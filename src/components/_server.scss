@@ -70,6 +70,14 @@
 
     [class*="containerDefault-"] {
 
+        [class*="mainContent-"]:hover::before {
+            border-radius: 24px;
+            background-color: var(--lt-yellow);
+            background-image: var(--yellow-stripes);
+            background-size: 75px;
+            animation: var(--btn-anim);
+        }
+
         [class*="icon-"] path {
             fill: var(--brown);
         }

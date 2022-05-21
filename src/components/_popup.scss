@@ -126,11 +126,19 @@
 
                     [class*="inputDefault-"] {
                         background-color: var(--btn-color);
-                        background-image: var(--btn-stripes);
-                        border: var(--btn-border);
+                        // background-image: var(--btn-stripes);
+                        // border: var(--btn-border);
+                        border: solid 5px var(--btn-color);
                         border-radius: 50px;
                         height: 50px;
                         padding: 10px 20px;
+                    }
+
+                    [class*="inputDefault-"]:focus {
+                        background-image: var(--teal-stripes);
+                        background-position-x: 0px;
+                        border: var(--btn-border);
+                        animation: var(--btn-anim);
                     }
 
                     [class*="input-"],

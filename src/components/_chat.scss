@@ -347,3 +347,46 @@
 [class*="callContainer-"] {
   margin: 30px 20px 20px 10px;
 }
+
+// Friends List
+[class*="peopleColumn-"] {
+  height: max-content;
+  max-height: 100%;
+
+  [class*="title-"] {
+    background-color: var(--cream);
+    font-family: var(--font-headline);
+    padding: 20px;
+    margin-bottom: 0;
+    border-radius: 32px;
+    text-align: center;
+  }
+
+  [class*="peopleList-"] {
+    background-color: var(--cream);
+    border-radius: 32px;
+    padding-top: 10px;
+    margin: 20px;
+
+    [class*="peopleListItem-"]:first-of-type {
+      border: none;
+    }
+
+    [class*="peopleListItem-"]:hover {
+      border-radius: 24px;
+      background: var(--orange-stripes);
+      background-size: 150px;
+      background-color: var(--lt-orange);
+    }
+
+    [class*="peopleListItem-"] {
+      border-top: dashed 2px var(--md-brown);
+
+      [class*="username-"] {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+}

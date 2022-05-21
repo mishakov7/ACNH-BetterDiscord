@@ -67,8 +67,7 @@
     color: var(--cream);
 }
 
-.title-3qD0b-::before,
-.title-31SJ6t::before {
+[class*="themed-"]::before {
     content: url('https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/ribbon-end.png?raw=true');
     position: absolute;
     width: 73px;

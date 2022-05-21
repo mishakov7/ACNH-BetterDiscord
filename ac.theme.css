@@ -188,7 +188,7 @@
   background-image: url("https://github.com/mishakov7/ACNH-BetterDiscord/blob/main/src/assets/acnh-repeat.png?raw=true");
   background-position-x: 0px;
   background-position-y: 0px;
-  animation: movehorizon 180s infinite linear;
+  animation: movehorizon 360s infinite linear;
 }
 [class*=theme-dark] .wrapper-3WhCwL, [class*=theme-light] .wrapper-3WhCwL {
   background: var(--cream);
@@ -380,11 +380,17 @@
 [class*=sidebar-] .mainContent-uDGa6R {
   margin-left: 10px;
 }
+[class*=sidebar-] [class*=containerDefault-] [class*=wrapper-]:hover [class*=content-] {
+  background-color: transparent !important;
+}
+[class*=sidebar-] [class*=containerDefault-] [class*=wrapper-] [class*=content-] {
+  border-radius: 24px;
+}
 [class*=sidebar-] [class*=containerDefault-] [class*=mainContent-]:hover::before {
   border-radius: 24px;
   background-color: var(--lt-yellow);
   background-image: var(--yellow-stripes);
-  background-size: 75px;
+  background-size: 100px;
   animation: var(--btn-anim);
 }
 [class*=sidebar-] [class*=containerDefault-] [class*=icon-] path {

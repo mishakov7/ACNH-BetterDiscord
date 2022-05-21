@@ -70,11 +70,19 @@
 
     [class*="containerDefault-"] {
 
+        [class*="wrapper-"]:hover [class*="content-"] {
+            background-color: transparent!important;
+        }
+
+        [class*="wrapper-"] [class*="content-"] {
+            border-radius: 24px;
+        }
+
         [class*="mainContent-"]:hover::before {
             border-radius: 24px;
             background-color: var(--lt-yellow);
             background-image: var(--yellow-stripes);
-            background-size: 75px;
+            background-size: 100px;
             animation: var(--btn-anim);
         }
 

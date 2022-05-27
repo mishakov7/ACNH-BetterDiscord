@@ -4,6 +4,22 @@
     padding: 10px;
     margin: 20px 0px 10px 20px;
 
+    // Event happening
+    [class*="channelNotice-"] {
+
+        [class*="text"] {
+            color: var(--drk-brown)!important;
+        }
+        
+        button {
+            border-radius: 32px;
+            background-color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+            font-family: var(--font-headline);
+            font-size: 10pt;
+        }
+
+    }
+
     [class*="container-"],
     [class*="privateChannels-"] {
         border-radius: 32px;

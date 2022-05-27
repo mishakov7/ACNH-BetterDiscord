@@ -14,9 +14,14 @@
         button {
             border-radius: 32px;
             background-color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
-            background-image: var(--drk-stripes);
             font-family: var(--font-headline);
             font-size: 10pt;
+        }
+
+        button:hover {
+            background-color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+            background-image: var(--lt-stripes);
+            animation: var(--btn-anim);
         }
 
     }

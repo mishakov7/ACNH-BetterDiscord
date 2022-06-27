@@ -327,6 +327,78 @@
     border-radius: 32px;
     background-color: var(--background-secondary-alt);
   }
+
+  // MENTIONS POPUP
+  [class*="autocomplete-"]::after {
+      // content: "\25B2";
+      content: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/caret-down-solid.svg");
+      width: 10px;
+      height: 10px;
+      color: red;
+      // bottom: -10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);  
+      z-index: 999;
+  }
+
+  [class*="autocomplete-"] {
+    @include container-reverse;
+
+
+    // :after {
+    //   content: "\25D2";
+    // }
+
+    position: absolute;
+    padding: 10px;
+
+    div, span, [class*="text-md-normal-"], [class*="base-"], [class*="defaultColor-"]  {
+      color: var(--cream)!important;
+    }
+
+    [class*="text-xs-normal-"], 
+    [class*="text-xs-normal-"] span {
+      color: var(--md-brown)!important;
+    }
+
+    [class*="text-"] {
+      font-family: var(--font-primary);
+    } 
+
+    [class*="defaultColor-"] {
+      text-transform: capitalize;
+      font-size: 1em;
+      text-align: center;
+      font-family: var(--font-primary);
+      font-weight: 800;
+    }
+
+    [class*="divider-"] {
+      border: none;
+      border-radius: 0;
+
+      ::after {
+        height: 2px!important;
+        background-color: red;
+      }
+    }
+
+    [class*="clickable-"] [class*="base-"]:hover,
+    [class*="clickable-"] [class*="base-"]:focus {
+      background-color: var(--brown);
+    }
+
+    // [class*="base-"]:first-of-type:hover {
+    //   background-color: transparent;
+    // }
+
+
+    [class*="base-"] {
+      border-radius: 10px;
+    }
+
+  }
 }
 
 [class*="typing-"] {

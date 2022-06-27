@@ -73,3 +73,10 @@
     color: var(--drk-brown);
     margin: 20px 20px 20px 10px;
   }
+
+  @mixin container-reverse {
+    border-radius: 32px;
+    background-color: var(--drk-brown);
+    color: var(--cream);
+    margin: 20px 20px 20px 10px;
+  }

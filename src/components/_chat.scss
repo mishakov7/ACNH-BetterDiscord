@@ -329,29 +329,24 @@
   }
 
   // MENTIONS POPUP
-  [class*="autocomplete-"]::after {
+  [class*="scrollableContainer-"]::after {
       // content: "\25B2";
       content: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/caret-down-solid.svg");
       width: 10px;
       height: 10px;
-      color: red;
-      // bottom: -10px;
+      top: -35px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);  
-      z-index: 999;
+      z-index: 100;
   }
 
   [class*="autocomplete-"] {
     @include container-reverse;
 
-
-    // :after {
-    //   content: "\25D2";
-    // }
-
     position: absolute;
     padding: 10px;
+    z-index: 99;
 
     div, span, [class*="text-md-normal-"], [class*="base-"], [class*="defaultColor-"]  {
       color: var(--cream)!important;

@@ -1,3 +1,5 @@
+// @import '';
+
 [class*="membersWrap"] {
     padding: 0 10px;
 
@@ -64,8 +66,7 @@
 
 // Righthand sidebar "Active Now"
 [class*="nowPlayingColumn-"] {
-    border-radius: 32px;
-    margin: 20px 20px 20px 10px;
+    @include container;
 
     [class*="scroller-"] {
         border: none;
@@ -74,5 +75,30 @@
     h3 {
         text-align: center;
         font-family: var(--font-headline);
+    }
+
+    [class*="itemCard-"] {
+        border-radius: 0;
+        border: none;
+        border-bottom: dashed 2px var(--md-brown);
+
+
+        [class*="body-"] {
+            background-color: var(--drk-brown);
+            transition: background-color 0.2s;
+
+            div {
+                color: var(--cream);
+            }
+        }
+    }
+
+    [class*="itemCard-"]:hover {
+        background-color: transparent!important;
+
+        [class*="body-"] {
+            background-color: var(--brown);
+        }
+
     }
 }

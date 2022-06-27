@@ -1,0 +1,49 @@
+// [class*=""] {}
+
+[class*="layerContainer"] {
+
+    [class*="medium-"],
+    [class*="footer-"] {
+        border-radius: 32px;
+        padding: 10px;
+    }
+
+    [class*="tabBar-"] {
+        [class*="tabBarItem-"] {
+            padding: 10px 20px;
+            font-family: var(--font-headline);
+            color: var(--drk-brown);
+        }
+    
+        [class*="tabBarItem-"]::before {
+            content: "";
+            background-color: var(--background-tertiary)!important;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            border-radius: 20px;
+            transition: border-radius 0.2s, border 0.2s;
+        }
+
+        [class*="selected-"]::before {
+            border-radius: 20px 20px 0 0;
+        }
+    }
+
+    [class*="body-"],
+    [class*="body-"] [class*="text-"],
+    [class*="header-"] {
+        color: var(--drk-brown)!important;
+    }
+
+    [class*="heading-"] {
+        font-family: var(--font-headline);
+    }
+
+    path {
+        fill: var(--drk-brown);
+    }
+}

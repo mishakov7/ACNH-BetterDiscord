@@ -37,6 +37,8 @@
   --bg-maple: #E49366;
   --btn-color: #00C2B7;
   --btn-border: solid 5px #4AE2D8;
+  --lt-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/light-stripes.png");
+  --drk-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/dark-stripes.png");
   --teal-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/teal-stripes.png");
   --yellow-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/yellow-stripes.png");
   --orange-stripes: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/orange-stripes.png");
@@ -184,7 +186,8 @@
   stroke: var(--drk-brown);
 }
 
-.theme-dark .container-2cd8Mz {
+.theme-dark .container-2cd8Mz,
+.theme-light .container-2cd8Mz {
   background-color: transparent;
 }
 
@@ -349,6 +352,22 @@
          margin: 0 20px;
    }*/
 }
+[class*=sidebar-] [class*=channelNotice-] [class*=text] {
+  color: var(--drk-brown) !important;
+}
+[class*=sidebar-] [class*=channelNotice-] button {
+  border-radius: 32px;
+  background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  font-family: var(--font-headline);
+  font-size: 10pt;
+  padding: 10px;
+}
+[class*=sidebar-] [class*=channelNotice-] button:hover {
+  background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  background-image: var(--drk-stripes);
+  animation: var(--btn-anim);
+  background-size: 100px;
+}
 [class*=sidebar-] [class*=container-],
 [class*=sidebar-] [class*=privateChannels-] {
   border-radius: 32px;
@@ -386,36 +405,36 @@
 [class*=sidebar-] .mainContent-uDGa6R {
   margin-left: 10px;
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=wrapper-]:hover [class*=content-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=wrapper-]:hover [class*=content-] {
   background-color: transparent !important;
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=wrapper-] [class*=content-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=wrapper-] [class*=content-] {
   border-radius: 24px;
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=mainContent-]:hover::before {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=mainContent-]:hover::before {
   border-radius: 24px;
   background-color: var(--lt-yellow);
   background-image: var(--yellow-stripes);
   background-size: 100px;
   animation: var(--btn-anim);
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=icon-] path {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=icon-] path {
   fill: var(--brown);
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=channelName-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=channelName-] {
   font-family: var(--font-primary);
   font-weight: 400;
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=unread-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=unread-] {
   background-color: var(--red);
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=userLimit-] [class*=total-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=userLimit-] [class*=total-] {
   background-color: var(--red);
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=userLimit-] [class*=total-]::after {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=userLimit-] [class*=total-]::after {
   border-right-color: var(--red);
 }
-[class*=sidebar-] [class*=containerDefault-] [class*=userLimit-] [class*=users-] {
+[class*=sidebar-] .containerDefault-YUSmu3 [class*=userLimit-] [class*=users-] {
   background-color: var(--drk-brown);
 }
 [class*=sidebar-] [class*=name-] {
@@ -1105,6 +1124,43 @@
 }
 [class*=layerContainer-] [id*=popout_] [class*=timeBarUserPopout-] [class*=barInner-] {
   background-color: var(--background-tertiary);
+}
+
+[class*=layerContainer] [class*=medium-],
+[class*=layerContainer] [class*=footer-] {
+  border-radius: 32px;
+  padding: 10px;
+}
+[class*=layerContainer] [class*=tabBar-] [class*=tabBarItem-] {
+  padding: 10px 20px;
+  font-family: var(--font-headline);
+  color: var(--drk-brown);
+}
+[class*=layerContainer] [class*=tabBar-] [class*=tabBarItem-]::before {
+  content: "";
+  background-color: var(--background-tertiary) !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  border-radius: 20px;
+  transition: border-radius 0.2s, border 0.2s;
+}
+[class*=layerContainer] [class*=tabBar-] [class*=selected-]::before {
+  border-radius: 20px 20px 0 0;
+}
+[class*=layerContainer] [class*=body-],
+[class*=layerContainer] [class*=body-] [class*=text-],
+[class*=layerContainer] [class*=header-] {
+  color: var(--drk-brown) !important;
+}
+[class*=layerContainer] [class*=heading-] {
+  font-family: var(--font-headline);
+}
+[class*=layerContainer] path {
+  fill: var(--drk-brown);
 }
 
 /*# sourceMappingURL=ac.theme.css.map */

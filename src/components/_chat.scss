@@ -329,23 +329,31 @@
   }
 
   // MENTIONS POPUP
-  [class*="scrollableContainer-"]::after {
+  [class*="autocomplete-"]::after {
       // content: "\25B2";
-      content: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/caret-down-solid.svg");
-      width: 10px;
-      height: 10px;
-      top: -35px;
-      position: absolute;
+      content: "";
+      background-image: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/caret-down-solid.svg");
+      background-size: 25px 25px; 
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-color: blue;
+      width: 20px;
+      height: 20px;
+      // top: -38px;
+      position: fixed;
+      right: 50%;
       left: 50%;
-      transform: translateX(-50%);  
+      // left: 50%;
+      transform: translateX(50%);  
       z-index: 100;
   }
 
   [class*="autocomplete-"] {
     @include container-reverse;
 
-    position: absolute;
+    // position: relative;
     padding: 10px;
+    bottom: 60px;
     z-index: 99;
 
     div, span, [class*="text-md-normal-"], [class*="base-"], [class*="defaultColor-"]  {
@@ -393,6 +401,215 @@
       border-radius: 10px;
     }
 
+  }
+}
+// GIF/STICKERS/EMOJI POPUP
+[class*="layerContainer-"] {
+  [class*="drawerSizingWrapper-"] {
+    position: absolute;
+    bottom: 5px;
+    margin: 0;
+
+    [class*="contentWrapper-"] {
+      @include container-reverse;
+      margin: 0;
+
+      [class*="navButton-"]:hover {
+        color: var(--md-brown);
+      }
+
+      [class*="backButton-"] svg path {
+        fill: var(--cream);
+      }
+
+      [class*="searchBar-"] {
+        background-color: var(--cream);
+        padding: 0;
+      }
+
+      [class*="wrapper-"] {
+        background-color: var(--brown);
+        border-radius: 0 20px 0 20px;
+
+        svg path,
+        svg g {
+          fill: var(--yellow);
+        }
+
+        [class*="categoryItemDefaultCategory-"]:hover {
+          background-color: var(--drk-brown);
+        }
+
+      }
+
+      [class*="upsell-"] {
+        background-color: var(--yellow);
+        margin-bottom: 20px;
+
+        svg path,
+        svg g {
+          fill: var(--drk-brown);
+        }
+      }
+
+      [class*="noSearchResultsContainer-"] [class*="wrapper-"] {
+        background-color: transparent;
+        color: var(--lt-brown);
+      }
+
+      // GIFS
+      [class*="result-"] {
+        
+        [class*="categoryText-"]{
+
+          [class*="categoryIcon-"]:first-of-type {
+
+            path:first-of-type {
+              fill: none;
+            }
+  
+            path:last-of-type {
+              fill: var(--cream);
+            }
+          } 
+
+        }
+
+        [class*="categoryText-"]:last-of-type {
+
+          [class*="categoryIcon-"] svg path,
+          [class*="categoryIcon-"] svg g {
+            fill: var(--cream);
+          }
+
+        }
+      }
+
+      // STICKERS 
+      #sticker-picker-tab-panel {
+        background-color: var(--drk-brown);
+
+        [class*="header-"] {
+
+          [class*="wrapper"] {
+            border-radius: 20px;
+
+            [class*="container-"] {
+              background-color: var(--cream);
+              padding: 0;
+  
+              [class*="input-"] {
+                color: var(--drk-brown);
+              }
+            }
+  
+            [class*="disabled-"] {
+              border-radius: 20px;
+              background-color: var(--brown);
+            }
+
+          }
+        }
+
+        #sticker-picker-grid {
+          [class*="wrapper"] {
+            background-color: transparent!important;
+          
+            [class*="packHeader-"] {
+              [class*="header-"] {
+                border-radius: 20px;
+                background-color: transparent;
+    
+                [class*="headerLabel"] {
+                  background-color: var(--yellow);
+                  padding: 2px 6px;
+                  border-radius: 6px;
+                  color: var(--drk-brown);
+                }
+                
+              }
+
+              [class*="header-"]::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: transparent;
+                border-bottom: dashed 2px var(--brown);
+                top: -6px;
+              }
+            }
+          }
+
+          [class*="inspector-"] {
+            background-color: var(--la-brown);
+  
+            [class*="defaultColor-"] {
+              color: var(--drk-brown);
+            }
+          }
+        }
+
+      }
+
+      // EMOJIS 
+      #emoji-picker-tab-panel {
+        background-color: var(--drk-brown);
+
+        [class*="emojiPickerListWrapper-"] {
+          [class*="header-"] {
+            border-radius: 20px;
+            background-color: transparent;
+
+            [class*="headerLabel"] {
+              background-color: var(--yellow);
+              padding: 2px 6px;
+              border-radius: 6px;
+              color: var(--drk-brown);
+            }
+
+            
+          }
+
+          [class*="header-"]::after {
+            background-color: transparent;
+            border-bottom: dashed 2px var(--brown);
+            top: -6px;
+          }
+
+        }
+
+        [class*="inspector-"] {
+          background-color: var(--la-brown);
+
+          [class*="defaultColor-"] {
+            color: var(--drk-brown);
+          }
+        }
+
+      }
+
+      // NITRO PROMO
+      [class*="premiumPromo-"] {
+        background-color: var(--drk-brown);
+
+        [class*="anchor-"] {
+          color: var(--background-tertiary);
+        }
+
+        [class*="shinyButton-"] {
+          background-color: var(--btn-color);
+          background-image: var(--teal-stripes);
+          animation: var(--btn-anim);
+          border-radius: 32px;
+          border: var(--btn-border);
+          padding: 20px;
+        }
+      }
+
+    }
   }
 }
 

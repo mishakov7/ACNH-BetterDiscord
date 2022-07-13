@@ -92,6 +92,11 @@
         margin-left: 10px;
     }
 
+    [class*="arrow-"] path,
+    [class*="addButton-"] polygon {
+        fill: var(--brown);
+    }
+
     .containerDefault-YUSmu3 {
 
         [class*="wrapper-"]:hover [class*="content-"] {

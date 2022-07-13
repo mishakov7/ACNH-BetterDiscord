@@ -54,7 +54,11 @@
         color: var(--cream);
 
         [class*="userPopout-"] {
-            border-radius: 75px 12px 32px 32px;
+            border-radius: 32px;
+
+            [class*="avatar-"] {
+                border-radius: 50px;
+            }
 
             [class*="headerText-"],
             [class*="headerTag"],

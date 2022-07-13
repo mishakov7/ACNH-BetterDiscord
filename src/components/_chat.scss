@@ -264,7 +264,7 @@
     }
 
     [class*="embedWrapper-"] {
-      border-radius: 6px 40px 20px 6px;
+      border-radius: 20px;
     }
 
   }
@@ -293,6 +293,39 @@
 
     [class*="subtitle-"] {
       font-size: 14pt;
+    }
+
+    [class*="groupStart-"] {
+      [id*="message-content-"] {
+
+        [class*="container-"] [class*="content-"] {
+          color: var(--drk-brown)!important;
+        }
+
+        [class*="welcomeCTAButtonOuter-"] {
+          border: var(--btn-border);
+          border-radius: 32px;
+          padding: 20px;
+          background-color: var(--btn-color);
+          background-image: var(--teal-stripes);
+          animation: var(--btn-anim);
+          transition: background-image 0.4s;
+
+          [class*="contents-"] {
+            font-family: var(--font-headline);
+          }
+        }
+
+        [class*="welcomeCTAButtonOuter-"]:hover {
+          background-color: var(--btn-color)!important;
+          background-image: var(--lt-stripes);
+        }
+
+      }
+    }
+
+    [class*="imageWrapper-"] {
+      border-radius: 20px;
     }
 }
 
@@ -388,8 +421,15 @@
     }
 
     [class*="clickable-"] [class*="base-"]:hover,
-    [class*="clickable-"] [class*="base-"]:focus {
+    [class*="clickable-"] [class*="base-"]:focus,
+    [class*="clickable-"][tabindex="0"] [class*="base-"],
+    [class*="clickable-"][aria-disabled=false]>[class*="base-"]:hover, 
+    [class*="clickable-"][aria-selected=true]>[class*="base-"] {
       background-color: var(--brown);
+    }
+
+    [class*="clickable-"][tabindex="0"][aria-disabled=true] [class*="base-"] {
+      background-color: transparent;
     }
 
     // [class*="base-"]:first-of-type:hover {
@@ -405,12 +445,14 @@
 }
 // GIF/STICKERS/EMOJI POPUP
 [class*="layerContainer-"] {
-  [class*="drawerSizingWrapper-"] {
+  [class*="drawerSizingWrapper-"],
+  [class*="layer-"] {
     position: absolute;
     bottom: 5px;
     margin: 0;
 
-    [class*="contentWrapper-"] {
+    [class*="contentWrapper-"],
+    [class*="animatorLeft-"] {
       @include container-reverse;
       margin: 0;
 
@@ -556,7 +598,12 @@
 
       // EMOJIS 
       #emoji-picker-tab-panel {
-        background-color: var(--drk-brown);
+        background: transparent;
+        
+        [class*="emojiPicker-"] {
+          background-color: var(--drk-brown);
+          border-radius: 32px;
+        }
 
         [class*="emojiPickerListWrapper-"] {
           [class*="header-"] {
@@ -632,7 +679,7 @@
   margin: 30px 20px 20px 10px;
 }
 
-// Friends List
+// FRIENDS LIST AREA
 [class*="peopleColumn-"] {
   
   height: max-content;

@@ -64,7 +64,7 @@
 
 }
 
-// Righthand sidebar "Active Now"
+// ACTIVE NOW SIDEBAR
 [class*="nowPlayingColumn-"] {
     @include container;
 
@@ -91,6 +91,10 @@
                 color: var(--cream);
             }
         }
+    }
+
+    [class*="active-"] {
+        background-color: transparent!important;
     }
 
     [class*="itemCard-"]:hover {

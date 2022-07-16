@@ -358,13 +358,13 @@
 }
 [class*=sidebar-] [class*=channelNotice-] button {
   border-radius: 32px;
-  background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  background-color: hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
   font-family: var(--font-headline);
   font-size: 10pt;
   padding: 10px;
 }
 [class*=sidebar-] [class*=channelNotice-] button:hover {
-  background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  background-color: hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
   background-image: var(--drk-stripes);
   animation: var(--btn-anim);
   background-size: 100px;
@@ -1330,6 +1330,43 @@
 }
 [class*=layerContainer-] [class*=container-] [class*=resultsGroup-] {
   border: none;
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"] {
+  border-radius: 32px;
+  position: relative;
+  top: 20px;
+  left: 10%;
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"] [class*=messagesPopoutWrap-] {
+  background-color: var(--drk-brown);
+  border-radius: 32px;
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"] [class*=messagesPopoutWrap-] [class*=messageGroupWrapper-] {
+  background-color: var(--cream);
+  border: none;
+  border-radius: 24px;
+  margin: 12px;
+  margin-bottom: 20px;
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"] [class*=header-] {
+  background: transparent;
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"] [class*=header-] h3 {
+  font-family: var(--font-headline);
+  color: var(--cream);
+}
+[class*=layerContainer-] [aria-label="Pinned Messages"]::before {
+  content: "";
+  background-image: url("https://mishakov7.github.io/ACNH-BetterDiscord/src/assets/caret-up-solid.svg");
+  background-size: 25px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  left: 80%;
+  transform: translateX(100%);
 }
 [class*=layerContainer-] [class*=layer-] {
   color: var(--cream);

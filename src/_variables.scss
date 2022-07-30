@@ -13,6 +13,7 @@
     --font-headline: 'fot-seurat_regular', sans-serif;
 
     /* base colors */ 
+    --ex-brown: #413f3c;
     --drk-brown: #716550;
     --brown: #968059;
     --la-brown: #b1976b;
@@ -66,6 +67,13 @@
       background-position-x: 100%;
       background-position-y: 100%;
     }
+  }
+
+  @mixin button {
+    background-image: var(--lt-stripes);
+    font-family: var(--font-headline);
+    border-radius: 50px;
+    animation: var(--btn-anim);
   }
 
   @mixin container {
